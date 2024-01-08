@@ -1,0 +1,86 @@
+/* Hide the images placed above the team lists */
+ul#teamRoster li img {
+    display: none;
+}
+
+/* Apply background images to the <ul> elements */
+ul#teamRoster > li:nth-child(1) {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg"); /* Denver Broncos logo */
+    background-repeat: no-repeat;
+    background-position: left center;
+        background-size: contain;
+
+    padding-left: 40px;
+}
+
+ul#teamRoster > li:nth-child(2) {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg"), url("https://commons.wikimedia.org/wiki/File:Solid_white.svg"); /* Chicago Bears logo */
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    padding-left: 40px;
+    background-blend-mode: luminosity;
+}
+
+ul#teamRoster li {
+    margin-bottom: 20px;
+}
+
+ul#teamRoster ul li {
+    padding-left: 20px; /* Adjust padding for nested lists */
+}
+
+h2.subjectHeader, h3.subjectHeader, h4.subjectHeader, h5.subjectHeader {
+    color: #0099ff;
+    font-family: sans-serif;
+}
+
+table {
+    border: 2px solid #333;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    font-weight: bold;
+    background-color: #FF5733;
+    color: white;
+}
+
+ul, ol {
+    list-style-type: square;
+}
+
+a.hyperLink:hover {
+    background-color: #FFF000;
+    text-decoration: none;
+}
+
+blockquote em {
+    background-color: #333;
+    color: #FFF;
+    
+    border-radius: 5px;
+}
+
+ul#checkbox-grid {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul#teamRoster li ul li:first-child {
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+ul#teamRoster li {
+    background-size: cover; /* Updated background size */
+}
